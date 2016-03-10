@@ -1,0 +1,11 @@
+*.toc
+*.log
+*.lof
+*.idx
+*.aux
+*.ist
+*.gls
+*.glo
+*.glg
+.~lock.*
+*.swp

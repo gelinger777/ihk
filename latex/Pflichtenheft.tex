@@ -1,0 +1,80 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage[utf8]{inputenc}%german letters package
+\usepackage{xcolor}%color package
+\usepackage[letterpaper, left=3.5cm, right=2.5cm, bottom=3cm]{geometry}
+\usepackage{datatool}
+\usepackage[toc]{glossaries}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\makeglossaries
+
+    %set default font family
+    \renewcommand{\familydefault}{\sfdefault}
+
+    %change tableofcontent name
+    \renewcommand*\contentsname{Inhalt}
+
+    %define colors
+    \definecolor{grew}{RGB}{100,100,100}
+
+    %set metadatas
+    \title{Website-Integration Bewerbermanagement}
+    \author{Eduard Luft}
+    \date{07.03.2016}
+
+
+\begin{document}
+
+    %first page
+    \begin{titlepage}
+
+        \centering
+        \Huge
+        reality bytes medien GmbH
+
+        \vspace{4cm}
+        Pflichtenheft
+
+        \noindent\rule{12cm}{0.5pt}
+        %hr
+
+        \vspace{5mm}
+        \textcolor{grew}{
+            Website-Integration Bewerbermanagement
+        }
+
+        \vfill
+        \raggedright
+        \linespread{1.6}
+        \Large
+        Projekt: Website-Integration Bewerbermanagement \\
+        Autor: Eduard Luft \\
+        Letzte Änderung: 08.03.2016
+    \end{titlepage}
+
+
+    %second page
+    \tableofcontents
+
+    %page break
+    \clearpage
+
+    %include sections
+    \include{sections/section1}
+    \include{sections/section2}
+    \include{sections/section3}
+    \include{sections/section4}
+    \include{sections/section5}
+    \include{sections/section6}
+    \include{sections/section7}
+    \include{sections/section8}
+    \include{sections/section9}
+    \include{sections/section10}
+    \include{sections/section11}
+    \include{sections/section12}
+    \include{sections/section13}
+    \include{sections/glossar}
+
+\end{document}
