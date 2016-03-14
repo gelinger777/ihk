@@ -9,3 +9,4 @@
 *.glg
 .~lock.*
 *.swp
+*.glsdefs
