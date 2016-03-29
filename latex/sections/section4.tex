@@ -1,30 +1,30 @@
 \section{Produktfunktionen}
 \textbf{/F010/} Cron-Job Einrichtung \\
-Auf der Linux Maschine von reality bytes wird ein Cron-Job angelegt, welche die Funktion /F100/ stündlich aufruft.
+Auf der Linux Maschine von reality bytes wird ein Cron-Job angelegt, welcher die Funktion /F100/ stündlich aufruft.
 \\ \\
 \textbf{/F100/} RSS Feed laden und speichern \\
-Die im umantis System eingepflegten Stellenangebote werden über ein RSS Feed ausgelesen.
-Die enthaltenden Informationen werden in der Datenbank von reality bytes gespeichert.
-Bereits enthaltende Einträge werden zur Aktualisierung überschrieben.
-Nicht mehr enthaltende Stellenangebote werden aus der Datenbank gelöscht.
+Die im umantis System eingepflegten Stellenangebote werden über einen RSS Feed ausgelesen.
+Die enthaltenen Informationen werden in der Datenbank von reality bytes gespeichert.
+Bereits enthaltene Einträge werden zur Aktualisierung überschrieben.
+Nicht mehr enthaltene Stellenangebote werden aus der Datenbank gelöscht.
 \\ \\
-\textbf{/F210/} Auslesen der Stellenangebottitels aus der reality bytes Datenbank und Ausgabe \\
+\textbf{/F210/} Auslesen der Stellenangebottitel aus der reality bytes Datenbank und Ausgabe \\
 Es werden alle Stellenangebottitel ausgelesen und als Übersichtsseite auf der reality bytes Website ausgegeben.
 \\ \\
 \textbf{/F220/} Auslesen aller Stellenangebotdaten der reality bytes Datenbank und Ausgabe \\
-Durch klicken eines Stellenangebotes auf der Übersichtsseite wird die reality bytes Website neu aufgebaut. Dabei wird eine Detailseite generiert, beinhaltend mit allen Informationen zum gewähltem Stellenangebot, welche über eine neue Datenbankanfrage erfolgt.
+Durch Klicken eines Stellenangebotes auf der Übersichtsseite wird die reality bytes Website neu aufgebaut. Dabei wird eine Detailseite generiert, welche alle Informationen zum gewählten Stellenangebot beinhaltet, was über eine neue Datenbankanfrage erfolgt.
 \\ \\
 \textbf{/F310/} Generierungsmöglichkeit einer Detailseite zu einer PDF \\
-Es wird ein Framework eingesetzt, welches die Funktionalität der Generierung eines Stellenangebots als PDF zur Verfügung stellt. Dieses wird auf der Detailseite der Stellenangebote eingebunden.
+Es wird ein Bibliothek eingesetzt, welche die Funktionalität der Generierung eines Stellenangebots als PDF zur Verfügung stellt. Dieses wird auf der Detailseite der Stellenangebote eingebunden.
 \\ \\
 \textbf{/F311/} Downloadmöglichkeit der PDF \\
-Die abgeschlossene Generierung wir das PDF in einem neuen Tab öffnen, wo es dem User möglich ist, das Dokument zu downloaden.
+Die abgeschlossene Generierung wird das PDF in einem neuen Tab öffnen, wo es dem \gls{User} möglich ist, das Dokument zu downloaden.
 \\ \\
-\textbf{/F410/} Implementierung eines Bewerbungsformulars\\
-Unter der Detailseite des Stellenangebots wird ein Button implementiert, welcher zum Bewerbungsformular weiterleitet. Dieser beinhaltet die folgenden Eingabefelder für den Bewerber: Vorname, Nachname, Straße, Hausnummer, PLZ, Ort, Telefon, E-Mail, Website, Geburtsdatum, Mögliches Eintrittsdatum und eine Uploadmöglichkeit weiterer Dokumente, welche in der Funktion /F430/ näher erläutert wird.
+\textbf{/F410/} Implementierung eines Bewerbungsformulars \\
+Unter der Detailseite des Stellenangebots wird ein \gls{Button} implementiert, welcher zum Bewerbungsformular weiterleitet. Das Bewerbungsformular beinhaltet die folgenden Eingabefelder für den Bewerber: Vorname, Nachname, Straße, Hausnummer, PLZ, Ort, Telefon, E-Mail, Website, Geburtsdatum, mögliches Eintrittsdatum und eine \gls{Uploadmoeglichkeit} weiterer Dokumente, welche in der Funktion /F430/ näher erläutert wird.
 \\ \\
 \textbf{/F420/} Validierung des Bewerbungsfomulars \\
-Das Bewerbungsformular wird durch folgende Pflichtfelder validiert: Vorname, Nachnahme, Telefon, E-Mail, Geburtsdatum. Es wird außerdem auf den korrekten Aufbau der E-Mail validiert.
+Folgende Felder werden im Bewerbungsformular geprüft: Vorname, Nachname, Telefon, E-Mail, Geburtsdatum. Es wird außerdem auf den korrekten Aufbau der E-Mail validiert.
 \\ \\
 \textbf{/F421/} Fehlerausgaben nach der Validierung \\
 Sollte die Validierung fehlschlagen wird unter den betroffenen Eingabefeldern ein Fehlertext ausgegeben. Zusätzlich wird das betroffene Eingabefeld rot umrandet.
@@ -32,8 +32,8 @@ Sollte die Validierung fehlschlagen wird unter den betroffenen Eingabefeldern ei
 \textbf{/F430/} Uploadmöglichkeit von Dokumenten \\
 Es können weitere Dokumente vom Bewerber hochgeladen werden mit einer maximalen Dateigröße von 10 Megabyte pro Dokument. Maximal können 5 Dokumente angehängt werden in den Formaten: PDF, ZIP.
 \\ \\
-\textbf{/F440/} Speichern der Bewerbungsdaten auf dem umantis Server \\
-Die erfassten Bewerbungsdaten werden in XML Format an das umantis System übergeben.
+\textbf{/F440/} Speichern der Bewerbungsdaten für den umantis Server \\
+Die erfassten Bewerbungsdaten werden in XML Format dem umantis System für den Import bereitgestellt.
 \\ \\
 \textbf{/F450/} Versand einer Informationsmail bei eingehender Bewerbung \\
 Nach der Funktion /F440/ wird eine Informationsmail an die Personalabteilung gesendet.

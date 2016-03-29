@@ -11,3 +11,16 @@ Urlaub + Feiertage
     => Anpassung Zeitplanung
 Pflichteheft (4. Produktfunktionen)
     => Anhand Auftrag entnehmen
+
+#Tue 15.03.16
+
+#Wed 16.03.16
+
+
+
+#Thu 17.03.16
+Qulitätsplan
+PSP
+
+#Fri 18.03.16
+Pflichtenheft Gespräch
