@@ -3,17 +3,8 @@
 
 	$db = new Database();
 	$titels = $db->read(['id, title']);
-?>
 
-<html>
-<head>
-	<title>Übersichtsseite</title>
-
-	<meta charset="UTF-8">
-</head>
-<body>
-	<?php
-
+	include 'templates/header.html';
 		/*
 		 * /F210/
 		 */
@@ -25,7 +16,7 @@
 			}
 		}
 
+	include 'templates/footer.html';
+
 	?>
-</body>
-</html>
 

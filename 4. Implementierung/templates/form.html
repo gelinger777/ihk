@@ -1,0 +1,68 @@
+
+<hr>Bewerbung als <?php echo $title ?><br><br>
+
+<!-- /F410/ -->
+<form enctype="multipart/form-data" action="" method="POST">
+
+  <input type="hidden" name="title" value="<?php echo $title ?>">
+
+  <label for="firstname">Vorname*</label>
+  <input name="firstname" type="text" <?php echo isset($val) ? $val->output('firstname') : false ?>><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('firstname') : false ?></div>
+
+  <label for="lastname">Nachname*</label>
+  <input name="lastname" type="text" <?php echo isset($val) ? $val->output('lastname') : false ?>><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('lastname') : false ?></div>
+
+  <label for="street">Straße</label>
+  <input name="street" type="text" <?php echo isset($val) ? $val->output('street') : false ?>><br>
+
+  <label for="housnr">Hausnummer</label>
+  <input name="housnr" type="text" <?php echo isset($val) ? $val->output('housnr') : false ?>><br>
+
+  <label for="zip">PLZ</label>
+  <input name="zip" type="text" <?php echo isset($val) ? $val->output('zip') : false ?>><br>
+
+  <label for="place">Ort</label>
+  <input name="place" type="text" <?php echo isset($val) ? $val->output('place') : false ?>><br>
+
+  <label for="phone">Telefon*</label>
+  <input name="phone" type="text" <?php echo isset($val) ? $val->output('phone') : false ?>><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('phone') : false ?></div>
+
+  <label for="mail">E-Mail*</label>
+  <input name="mail" type="text" <?php echo isset($val) ? $val->output('mail') : false ?>><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('mail') : false ?></div>
+
+  <label for="web">Website</label>
+  <input name="web" type="text" <?php echo isset($val) ? $val->output('web') : false ?>><br>
+
+  <label for="birth">Geburtsdatum*</label>
+  <input name="birth" type="date" <?php echo isset($val) ? $val->output('birth') : false ?>><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('birth') : false ?></div>
+
+  <label for="enteringday">Mögliches Eintrittsdatum</label>
+  <input name="enteringday" type="date" <?php echo isset($val) ? $val->output('enteringday') : false ?>><br>
+
+  <label for="fileToUpload" class="button"></label>
+  <input class="hidden" type="file" name="fileToUpload1" id="fileToUpload1"><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('fileToUpload1') : false ?></div>
+
+  <label for="fileToUpload" class="button"></label>
+  <input class="hidden" type="file" name="fileToUpload2" id="fileToUpload2"><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('fileToUpload2') : false ?></div>
+
+  <label for="fileToUpload" class="button"></label>
+  <input class="hidden" type="file" name="fileToUpload3" id="fileToUpload3"><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('fileToUpload3') : false ?></div>
+
+  <label for="fileToUpload" class="button"></label>
+  <input class="hidden" type="file" name="fileToUpload4" id="fileToUpload4"><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('fileToUpload4') : false ?></div>
+
+  <label for="fileToUpload" class="button"></label>
+  <input class="hidden" type="file" name="fileToUpload5" id="fileToUpload5"><br>
+  <div class="errmsg"><?php echo isset($val) ? $val->errorMsg('fileToUpload5') : false ?></div>
+
+  <input type="submit" class="button" value="Absenden" name="submit">
+</form>
