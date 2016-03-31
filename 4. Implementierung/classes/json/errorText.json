@@ -1,0 +1,38 @@
+{
+  "firstname": {
+    "empty": "Bitte geben Sie Ihren Vornamen an"
+  },
+  "lastname": {
+    "empty": "Bitte geben Sie Ihren Nachnamen an"
+  },
+  "phone": {
+    "empty": "Bitte geben Sie Ihre Telefonnummer an"
+  },
+  "mail": {
+    "empty": "Bitte geben Sie Ihre E-Mail Adresse an",
+    "syntax": "Bitte geben Sie eine gültige E-Mial an"
+  },
+  "birth": {
+    "empty": "Bitte geben Sie Ihr Geburtsdatum an"
+  },
+  "fileToUpload1": {
+    "size": "Das Dokument darf nicht 10MB überschreiten",
+    "type": "Das Dokument darf nur vom Typ PDF oder ZIP sein"
+  },
+  "fileToUpload2": {
+    "size": "Das Dokument darf nicht 10MB überschreiten",
+    "type": "Das Dokument darf nur vom Typ PDF oder ZIP sein"
+  },
+  "fileToUpload3": {
+    "size": "Das Dokument darf nicht 10MB überschreiten",
+    "type": "Das Dokument darf nur vom Typ PDF oder ZIP sein"
+  },
+  "fileToUpload4": {
+    "size": "Das Dokument darf nicht 10MB überschreiten",
+    "type": "Das Dokument darf nur vom Typ PDF oder ZIP sein"
+  },
+  "fileToUpload5": {
+    "size": "Das Dokument darf nicht 10MB überschreiten",
+    "type": "Das Dokument darf nur vom Typ PDF oder ZIP sein"
+  }
+}
